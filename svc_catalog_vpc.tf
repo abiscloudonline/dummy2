@@ -4,7 +4,7 @@ resource "aws_servicecatalog_product" "oms_vpc" {              #creating a vpc p
   type  = "${var.type}"
 
   provisioning_artifact_parameters {
-    template_url = "https://${aws_s3_bucket.cf_template_bucket.id}.s3.${var.region}.amazonaws.com/${aws_s3_object.vpctemplate.key}"
+   # template_url = "https://${aws_s3_bucket.cf_template_bucket.id}.s3.${var.region}.amazonaws.com/${aws_s3_object.vpctemplate.key}"
     template_url = "https://omsbucketcftemplate.s3.ap-south-1.amazonaws.com/cf_template_vpc_subnet_igw_sg.yaml"
     name = "${var.vpc_name}"
     type  = "${var.type}"
