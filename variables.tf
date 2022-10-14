@@ -33,7 +33,8 @@ variable "description" {
 }
 variable "portfolio_role_arn" {
   description = "Role for the portfolio"
-  default     = "arn:aws:iam::458819240932:role/codebuild-role"
+  #default     = "arn:aws:iam::458819240932:role/codebuild-role"
+  default     = "arn:aws:iam::458819240932:role/cicd-cp-role"
 }
 variable "ecs_role_name" {
   description = "Name of the ECS role"
@@ -50,10 +51,4 @@ variable "shareacc_id" {
 variable "shareacc_type" {
   description = "Type of the account"
   default     = "ACCOUNT"
-}
-variable "iam_user" {
-  description = "Trust entity of the role"
-}
-variable "iamuser" {
-  description = "IAM user"
 }
