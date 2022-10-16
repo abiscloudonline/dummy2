@@ -28,12 +28,12 @@ resource "aws_servicecatalog_portfolio_share" "portfolio_share" {  #sharing the 
   portfolio_id = aws_servicecatalog_portfolio.portfolio.id
   type         = "${var.shareacc_type}"
 }
-#terraform {
-   # backend "s3" {
-       # bucket = "terraform-tfstate-s3-bucket"
-       # key    = "terraform/remote/s3/terraform.tfstate"
-       # region     = "ap-south-1"
-       #dynamodb_table  = "dynamodb-state-locking"
-   # }
-#}
+terraform {
+    backend "s3" {
+        bucket = "terraform-tfstate-s3-bucket"
+        key    = "terraform/remote/s3/terraform.tfstate"
+        region     = "ap-south-1"
+       dynamodb_table  = "dynamodb-state-locking"
+    }
+}
 
