@@ -4,8 +4,8 @@ variable "profile" {
 }
 variable "region" {
   description = "AWS region"
-#  default     = "us-east-1"
-   default     = "ap-south-1"
+  default     = "us-east-1"
+#   default     = "ap-south-1"
 }
 variable "owner" {
   description = "Owner of the Product"
@@ -33,8 +33,8 @@ variable "description" {
 }
 variable "portfolio_role_arn" {
   description = "Role for the portfolio"
-  #default     = "arn:aws:iam::458819240932:role/codebuild-role"
-  default     = "arn:aws:iam::458819240932:role/cicd-cp-role"
+  default     = "arn:aws:iam::458819240932:role/codebuild-role"
+ # default     = "arn:aws:iam::458819240932:role/cicd-cp-role"
 }
 variable "ecs_role_name" {
   description = "Name of the ECS role"
