@@ -4,8 +4,7 @@ variable "profile" {
 }
 variable "region" {
   description = "AWS region"
-  default     = "us-east-1"
-#   default     = "ap-south-1"
+  #default     = "us-east-1"
 }
 variable "owner" {
   description = "Owner of the Product"
@@ -21,7 +20,7 @@ variable "type" {
 }
 variable "url_vpc" {
   description = "url of the Template created"
-  default     = "https://testbucket2409ny.s3.amazonaws.com/cf_template_vpc_sgcheck.yaml"
+  #default     = "https://testbucket2409ny.s3.amazonaws.com/cf_template_vpc_sgcheck.yaml"
 }
 variable "portfolio_name" {
   description = "Name of the portfolio"
@@ -33,22 +32,28 @@ variable "description" {
 }
 variable "portfolio_role_arn" {
   description = "Role for the portfolio"
-  default     = "arn:aws:iam::458819240932:role/codebuild-role"
+  #default     = "arn:aws:iam::458819240932:role/codebuild-role"
  # default     = "arn:aws:iam::458819240932:role/cicd-cp-role"
 }
 variable "ecs_role_name" {
   description = "Name of the ECS role"
-  default     = "SC_ECS_role"
+  default     = "omsecsrole"
 }
 variable "url_ecsrole" {
   description = "url of the Template created"
-  default     = "https://testbucket2409ny.s3.amazonaws.com/cf_template_ecsrole.yaml"
+  #default     = "https://testbucket2409ny.s3.amazonaws.com/cf_template_ecsrole.yaml"
 }
 variable "shareacc_id" {
   description = "ID of the share account"
-  default     = "614982824857"
+  #default     = "614982824857"
 }
 variable "shareacc_type" {
   description = "Type of the account"
-  default     = "ACCOUNT"
+  #default     = "ACCOUNT"
+}
+variable "access_key" {
+  description = "access key to execute the tf script"
+}
+variable "secret_key" {
+  description = "secret key to execute the script"
 }

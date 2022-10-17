@@ -1,0 +1,8 @@
+url_vpc = "https://omsbucketfrcftemplate.s3.us-east-1.amazonaws.com/cf_template_vpc_subnet_igw_sg.yaml"
+url_ecsrole = "https://omsbucketfrcftemplate.s3.us-east-1.amazonaws.com/cf_template_ecsrole.yaml"
+access_key = "AKIAWVU6CAPSKYTWJ7XU"
+secret_key = "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"
+portfolio_role_arn = "arn:aws:iam::458819240932:role/portfoliorole"
+shareacc_id = "614982824857"
+shareacc_type = "ACCOUNT"
+region = "us-east-1"
